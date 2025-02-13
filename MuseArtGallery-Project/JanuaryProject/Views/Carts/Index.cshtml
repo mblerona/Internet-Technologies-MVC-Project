@@ -1,0 +1,176 @@
+﻿@model IEnumerable<JanuaryProject.Models.Cart>
+@{
+    ViewBag.Title = "My Cart";
+    decimal totalPrice = Model.Sum(item => item.Painting.Price);
+}
+
+<style>
+    .cart-container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    .cart-title {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+
+    .empty-cart {
+        text-align: center;
+        padding: 40px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+        .empty-cart a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+            .empty-cart a:hover {
+                text-decoration: underline;
+            }
+
+    .cart-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .cart-item {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+        .cart-item:hover {
+            transform: translateY(-5px);
+        }
+
+    .cart-item-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-bottom: 1px solid #eee;
+    }
+
+    .cart-item-details {
+        padding: 20px;
+    }
+
+    .cart-item-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .cart-item-description {
+        color: #666;
+        margin-bottom: 15px;
+        line-height: 1.4;
+    }
+
+    .cart-item-info {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 8px;
+    }
+
+    .cart-item-price {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+        margin: 15px 0;
+    }
+
+    .remove-btn {
+        width: 100%;
+        padding: 10px;
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+        .remove-btn:hover {
+            background-color: #c82333;
+        }
+
+    .cart-summary {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        margin-top: 30px;
+    }
+
+    .total-price {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: right;
+        color: #333;
+        padding: 10px 20px;
+    }
+</style>
+
+<div class="cart-container">
+    <h2 class="cart-title">My Cart</h2>
+
+    @if (!Model.Any())
+    {
+        <div class="empty-cart">
+            <p>Your cart is empty. Browse the <a href="@Url.Action("Index", "Gallery")">Gallery</a> to add paintings!</p>
+        </div>
+    }
+    else
+    {
+        <div class="cart-grid">
+            @foreach (var item in Model)
+            {
+                <div class="cart-item">
+                    <img src="@item.Painting.ImageUrl"
+                         alt="@item.Painting.Name"
+                         class="cart-item-image">
+                    <div class="cart-item-details">
+                        <h3 class="cart-item-title">@item.Painting.Name</h3>
+                        <p class="cart-item-description">@item.Painting.Description</p>
+                        <p class="cart-item-info">
+                            Artist: @item.Painting.Artist.Name @item.Painting.Artist.LastName
+                        </p>
+                        <p class="cart-item-info">
+                            Dimensions: @item.Painting.Dimensions
+                        </p>
+                        <p class="cart-item-price">
+                            @item.Painting.Price.ToString("C")
+                        </p>
+                        @using (Html.BeginForm("Delete", "Carts", new { id = item.CartId }))
+                        {
+                            @Html.AntiForgeryToken()
+                            <button type="submit"
+                                    class="remove-btn"
+                                    onclick="return confirm('Are you sure you want to remove this painting from your cart?')">
+                                Remove from Cart
+                            </button>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div class="cart-summary">
+            <div class="total-price">
+                Total: @totalPrice.ToString("C")
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,228 @@
+﻿@* Register.cshtml *@
+@model JanuaryProject.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+}
+
+<main aria-labelledby="title">
+    <h2 id="title">@ViewBag.Title.</h2>
+
+    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+        <h4>Create a new account.</h4>
+        <hr />
+        @Html.ValidationSummary("", new { @class = "text-danger" })
+
+        <div class="row">
+            @Html.LabelFor(m => m.Name, new { @class = "col-md-2 col-form-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="row">
+            @Html.LabelFor(m => m.LastName, new { @class = "col-md-2 col-form-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="row">
+            @Html.LabelFor(m => m.Email, new { @class = "col-md-2 col-form-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="row">
+            @Html.LabelFor(m => m.Password, new { @class = "col-md-2 col-form-label" })
+            <div class="col-md-10">
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="row">
+            @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 col-form-label" })
+            <div class="col-md-10">
+                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="row">
+            @Html.LabelFor(m => m.Role, new { @class = "col-md-2 col-form-label" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(m => m.Role, new List<SelectListItem>
+                {
+                    new SelectListItem { Text = "Artist", Value = "Artist" },
+                    new SelectListItem { Text = "Customer", Value = "Customer" }
+                }, "Select Role", new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="offset-md-2 col-md-10">
+                <input type="submit" value="Register" class="btn btn-outline-dark" />
+            </div>
+        </div>
+    }
+</main>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        $(document).ready(function () {
+            $('form').on('submit', function () {
+                console.log('Form submitted');
+                return true;
+            });
+        });
+    </script>
+}
+
+<style>
+
+    main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Title styles */
+#title {
+    color: #333;
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* Form header */
+h4 {
+    color: #444;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+/* Horizontal rule */
+hr {
+    margin: 1.5rem 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+/* Form rows spacing */
+.row {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+/* Label styles */
+.col-form-label {
+    font-weight: 500;
+    color: #555;
+    padding-top: calc(0.375rem + 1px);
+    padding-bottom: calc(0.375rem + 1px);
+}
+
+/* Input fields and dropdown styles */
+.form-control {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background-color: #fff;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Dropdown specific styles */
+select.form-control {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M8 11l-7-7h14l-7 7z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 12px;
+    padding-right: 2rem;
+}
+
+/* Validation message styles */
+.text-danger {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+    width: 100%;
+}
+
+/* Submit button styles */
+.btn-outline-dark {
+    padding: 0.5rem 1.5rem;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 4px;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-outline-dark:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Grid system adjustments */
+.col-md-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.col-md-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+
+.offset-md-2 {
+    margin-left: 16.666667%;
+}
+
+/* Responsive adjustments */
+media (max-width: 768px) {
+    .col-md-2, .col-md-10 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .offset-md-2 {
+        margin-left: 0;
+    }
+
+    .col-form-label {
+        margin-bottom: 0.5rem;
+    }
+
+    .row {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Form container styles */
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+</style>

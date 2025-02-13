@@ -1,0 +1,166 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B14AD9D0-9F3D-467E-A6A9-F77FF4E16272}|JanuaryProject\\JanuaryProject.csproj|c:\\users\\blero\\not onedrive\\it\\januaryproject\\januaryproject\\controllers\\paintingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B14AD9D0-9F3D-467E-A6A9-F77FF4E16272}|JanuaryProject\\JanuaryProject.csproj|solutionrelative:januaryproject\\controllers\\paintingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14AD9D0-9F3D-467E-A6A9-F77FF4E16272}|JanuaryProject\\JanuaryProject.csproj|c:\\users\\blero\\not onedrive\\it\\januaryproject\\januaryproject\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B14AD9D0-9F3D-467E-A6A9-F77FF4E16272}|JanuaryProject\\JanuaryProject.csproj|solutionrelative:januaryproject\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14AD9D0-9F3D-467E-A6A9-F77FF4E16272}|JanuaryProject\\JanuaryProject.csproj|C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\januaryproject\\views\\gallery\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B14AD9D0-9F3D-467E-A6A9-F77FF4E16272}|JanuaryProject\\JanuaryProject.csproj|solutionrelative:januaryproject\\views\\gallery\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14AD9D0-9F3D-467E-A6A9-F77FF4E16272}|JanuaryProject\\JanuaryProject.csproj|C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\januaryproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B14AD9D0-9F3D-467E-A6A9-F77FF4E16272}|JanuaryProject\\JanuaryProject.csproj|solutionrelative:januaryproject\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14AD9D0-9F3D-467E-A6A9-F77FF4E16272}|JanuaryProject\\JanuaryProject.csproj|C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\januaryproject\\content\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B14AD9D0-9F3D-467E-A6A9-F77FF4E16272}|JanuaryProject\\JanuaryProject.csproj|solutionrelative:januaryproject\\content\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14AD9D0-9F3D-467E-A6A9-F77FF4E16272}|JanuaryProject\\JanuaryProject.csproj|C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\januaryproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B14AD9D0-9F3D-467E-A6A9-F77FF4E16272}|JanuaryProject\\JanuaryProject.csproj|solutionrelative:januaryproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14AD9D0-9F3D-467E-A6A9-F77FF4E16272}|JanuaryProject\\JanuaryProject.csproj|C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\januaryproject\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B14AD9D0-9F3D-467E-A6A9-F77FF4E16272}|JanuaryProject\\JanuaryProject.csproj|solutionrelative:januaryproject\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14AD9D0-9F3D-467E-A6A9-F77FF4E16272}|JanuaryProject\\JanuaryProject.csproj|C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\januaryproject\\content\\gallery.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B14AD9D0-9F3D-467E-A6A9-F77FF4E16272}|JanuaryProject\\JanuaryProject.csproj|solutionrelative:januaryproject\\content\\gallery.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14AD9D0-9F3D-467E-A6A9-F77FF4E16272}|JanuaryProject\\JanuaryProject.csproj|C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\januaryproject\\content\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B14AD9D0-9F3D-467E-A6A9-F77FF4E16272}|JanuaryProject\\JanuaryProject.csproj|solutionrelative:januaryproject\\content\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 188,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PaintingsController.cs",
+              "DocumentMoniker": "C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\JanuaryProject\\Controllers\\PaintingsController.cs",
+              "RelativeDocumentMoniker": "JanuaryProject\\Controllers\\PaintingsController.cs",
+              "ToolTip": "C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\JanuaryProject\\Controllers\\PaintingsController.cs",
+              "RelativeToolTip": "JanuaryProject\\Controllers\\PaintingsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T11:56:47.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\JanuaryProject\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "JanuaryProject\\Controllers\\CustomersController.cs",
+              "ToolTip": "C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\JanuaryProject\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "JanuaryProject\\Controllers\\CustomersController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAADsAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T22:20:26.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\JanuaryProject\\Views\\Gallery\\Index.cshtml",
+              "RelativeDocumentMoniker": "JanuaryProject\\Views\\Gallery\\Index.cshtml",
+              "ToolTip": "C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\JanuaryProject\\Views\\Gallery\\Index.cshtml",
+              "RelativeToolTip": "JanuaryProject\\Views\\Gallery\\Index.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T22:05:02.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\JanuaryProject\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "JanuaryProject\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\JanuaryProject\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "JanuaryProject\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T21:55:27.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\JanuaryProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "JanuaryProject\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\JanuaryProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "JanuaryProject\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAB8AAAB3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T21:38:43.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\JanuaryProject\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "JanuaryProject\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\JanuaryProject\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "JanuaryProject\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T21:34:54.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "gallery.css",
+              "DocumentMoniker": "C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\JanuaryProject\\Content\\gallery.css",
+              "RelativeDocumentMoniker": "JanuaryProject\\Content\\gallery.css",
+              "ToolTip": "C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\JanuaryProject\\Content\\gallery.css",
+              "RelativeToolTip": "JanuaryProject\\Content\\gallery.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-12T21:33:52.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "bootstrap.css",
+              "DocumentMoniker": "C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\JanuaryProject\\Content\\bootstrap.css",
+              "RelativeDocumentMoniker": "JanuaryProject\\Content\\bootstrap.css",
+              "ToolTip": "C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\JanuaryProject\\Content\\bootstrap.css",
+              "RelativeToolTip": "JanuaryProject\\Content\\bootstrap.css",
+              "ViewState": "AQIAAOMKAAAAAAAAAAApwPYKAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-12T21:15:30.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "custom.css",
+              "DocumentMoniker": "C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\JanuaryProject\\Content\\custom.css",
+              "RelativeDocumentMoniker": "JanuaryProject\\Content\\custom.css",
+              "ToolTip": "C:\\Users\\blero\\Not OneDrive\\IT\\JanuaryProject\\JanuaryProject\\Content\\custom.css",
+              "RelativeToolTip": "JanuaryProject\\Content\\custom.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-12T21:15:24.03Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

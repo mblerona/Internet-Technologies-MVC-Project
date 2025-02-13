@@ -1,0 +1,146 @@
+﻿@model JanuaryProject.Models.Painting
+@{
+    ViewBag.Title = "Add New Painting";
+}
+
+<style>
+    .create-painting-container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 30px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    }
+
+    .form-header {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+    }
+
+    .form-group {
+        margin-bottom: 25px;
+    }
+
+    .form-label {
+        font-weight: 600;
+        color: #444;
+        margin-bottom: 8px;
+        display: block;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        transition: border-color 0.3s ease;
+    }
+
+        .form-control:focus {
+            border-color: #0066cc;
+            box-shadow: 0 0 0 2px rgba(0,102,204,0.2);
+            outline: none;
+        }
+
+    .text-danger {
+        color: #dc3545;
+        font-size: 0.9rem;
+        margin-top: 5px;
+    }
+
+    .buttons-container {
+        display: flex;
+        gap: 15px;
+        margin-top: 30px;
+        justify-content: flex-end;
+    }
+
+    .submit-btn {
+        background-color: #0066cc;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .submit-btn:hover {
+            background-color: #0052a3;
+        }
+
+    .back-link {
+        color: #666;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .back-link:hover {
+            color: #333;
+            text-decoration: underline;
+        }
+
+    textarea.form-control {
+        min-height: 100px;
+    }
+</style>
+
+<div class="create-painting-container">
+    <div class="form-header">
+        <h2>Add New Painting</h2>
+        <p>Fill in the details of your artwork</p>
+    </div>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, "Painting Title", new { @class = "form-label" })
+            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter the title of your painting" } })
+            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, "Description", new { @class = "form-label" })
+            @Html.TextAreaFor(model => model.Description, new { @class = "form-control", placeholder = "Describe your artwork" })
+            @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Dimensions, "Dimensions", new { @class = "form-label" })
+            @Html.EditorFor(model => model.Dimensions, new { htmlAttributes = new { @class = "form-control", placeholder = "e.g., 24\" x 36\"" } })
+            @Html.ValidationMessageFor(model => model.Dimensions, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Price, "Price ($)", new { @class = "form-label" })
+            @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter price" } })
+            @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ImageUrl, "Image URL", new { @class = "form-label" })
+            @Html.EditorFor(model => model.ImageUrl, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter the URL of your painting image" } })
+            @Html.ValidationMessageFor(model => model.ImageUrl, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ArtistId, "Artist", new { @class = "form-label" })
+            @Html.DropDownList("ArtistId", null, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.ArtistId, "", new { @class = "text-danger" })
+        </div>
+
+        <div class="buttons-container">
+            @Html.ActionLink("Back to Gallery", "MyGallery", "Gallery", null, new { @class = "back-link" })
+            <button type="submit" class="submit-btn">Create Painting</button>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
